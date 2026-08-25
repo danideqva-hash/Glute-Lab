@@ -112,13 +112,12 @@ const BLOCK_A_DAYS = [
     title: "Quads & Glutes",
     focus: "priority",
     exercises: [
-      { id: "a1e1", name: "Heel Elevated Smith Squats", sets: 4, reps: "8-10", rest: 120 },
-      { id: "a1e2", name: "Hip Thrusts (3s negatives)", sets: 4, reps: "8-10", rest: 120 },
-      { id: "a1e3", name: "Leg Press", sets: 3, reps: "10-12", rest: 90 },
-      { id: "a1e4", name: "Leg Extensions (drop set S3)", sets: 3, reps: "12-15", rest: 60 },
-      { id: "a1e5", name: "Hip Abduction Machine", sets: 3, reps: "15", rest: 60 },
-      { id: "a1e6", name: "Machine Adductions", sets: 3, reps: "12-15", rest: 60 },
-      { id: "a1e7", name: "Smith Machine Calf Raises", sets: 3, reps: "12-15", rest: 60 },
+      { id: "a1e1", name: "Heel Elevated Smith Squats", sets: 4, reps: "8-10", rest: 150 },
+      { id: "a1e2", name: "Hip Thrusts (3s negatives)", sets: 4, reps: "8-10", rest: 150 },
+      { id: "a1e3", name: "Reverse Lunges (en el lugar)", sets: 4, reps: "10-12 c/pierna", rest: 90 },
+      { id: "a1e5", name: "Leg Extensions (drop set S4)", sets: 4, reps: "12-15", rest: 60 },
+      { id: "a1e9", name: "Seated Leg Curl", sets: 4, reps: "12", rest: 60 },
+      { id: "a1e8", name: "Smith Machine Calf Raises", sets: 3, reps: "12-15", rest: 60 },
     ],
   },
   {
@@ -126,14 +125,15 @@ const BLOCK_A_DAYS = [
     num: 2,
     title: "Chest & Back",
     focus: "maintain",
+    upperBody: true,
     exercises: [
-      { id: "a2e1", name: "Lat Pulldown (close grip)", sets: 3, reps: "10-12", rest: 90 },
       { id: "a2e2", name: "Machine Chest Press", sets: 3, reps: "10-12", rest: 90 },
-      { id: "a2e3", name: "Dumbbell Rows", sets: 3, reps: "10-12", rest: 90 },
-      { id: "a2e4", name: "DB Chest Press", sets: 3, reps: "10-12", rest: 90 },
       { id: "a2e5", name: "Smith Machine Push Ups", sets: 3, reps: "10-12", rest: 60 },
-      { id: "a2e6", name: "Machine Rows", sets: 2, reps: "12", rest: 60 },
-      { id: "a2e7", name: "Face Pulls", sets: 2, reps: "15", rest: 45 },
+      { id: "a2e6", name: "Machine Rows", sets: 3, reps: "12", rest: 60 },
+      { id: "a2e4", name: "DB Chest Press", sets: 3, reps: "10-12", rest: 90 },
+      { id: "a2e3", name: "Dumbbell Rows", sets: 3, reps: "10-12", rest: 90 },
+      { id: "a2e1", name: "Lat Pulldown (close grip)", sets: 3, reps: "10-12", rest: 90 },
+      { id: "a2e7", name: "Face Pulls", sets: 3, reps: "15", rest: 45 },
     ],
   },
   {
@@ -143,8 +143,10 @@ const BLOCK_A_DAYS = [
     focus: "priority",
     exercises: [
       { id: "a3e1", name: "Banded Hip Thrusts (3s hold)", sets: 4, reps: "10", rest: 90 },
-      { id: "a3e2", name: "Good Mornings", sets: 3, reps: "10-12", rest: 120 },
-      { id: "a3e3", name: "Donkey Kicks", sets: 3, reps: "15", rest: 60 },
+      { id: "a3e8", name: "Hip Abduction Machine", sets: 3, reps: "15", rest: 60 },
+      { id: "a3e9", name: "Machine Adductions", sets: 3, reps: "12-15", rest: 60 },
+      { id: "a3e2", name: "Cable Pull-Through", sets: 3, reps: "10-12", rest: 90 },
+      { id: "a3e3", name: "Cable Donkey Kicks", sets: 3, reps: "15", rest: 60 },
       { id: "a3e4", name: "Cable Machine Leg Raises", sets: 3, reps: "15", rest: 45 },
       { id: "a3e5", name: "Cable Toe Touches", sets: 3, reps: "15", rest: 45 },
       { id: "a3e6", name: "Side Crunches", sets: 3, reps: "15", rest: 45 },
@@ -156,14 +158,15 @@ const BLOCK_A_DAYS = [
     num: 4,
     title: "Arms & Shoulders",
     focus: "maintain",
+    upperBody: true,
     exercises: [
       { id: "a4e1", name: "Machine Shoulder Press", sets: 3, reps: "10-12", rest: 90 },
       { id: "a4e2", name: "DB Shoulder Press", sets: 3, reps: "10-12", rest: 90 },
-      { id: "a4e3", name: "Cable Shoulder Fly's", sets: 3, reps: "12-15", rest: 60 },
-      { id: "a4e4", name: "Cable Machine Curls", sets: 3, reps: "10-12", rest: 60 },
+      { id: "a4e7", name: "DB Skull Crushers", sets: 3, reps: "10-12", rest: 60 },
       { id: "a4e5", name: "DB Curls", sets: 3, reps: "10-12", rest: 60 },
       { id: "a4e6", name: "Cable Push Downs", sets: 3, reps: "10-12", rest: 60 },
-      { id: "a4e7", name: "DB Skull Crushers", sets: 3, reps: "10-12", rest: 60 },
+      { id: "a4e4", name: "Cable Machine Curls", sets: 3, reps: "10-12", rest: 60 },
+      { id: "a4e3", name: "Cable Shoulder Fly's", sets: 3, reps: "12-15", rest: 60 },
     ],
   },
   {
@@ -172,10 +175,11 @@ const BLOCK_A_DAYS = [
     title: "Hamstrings & Glutes",
     focus: "priority",
     exercises: [
-      { id: "a5e1", name: "RDL's", sets: 4, reps: "8-10", rest: 120 },
-      { id: "a5e2", name: "Bulgarian Lunges", sets: 3, reps: "10-12", rest: 90 },
-      { id: "a5e3", name: "Lying Leg Curl", sets: 4, reps: "12", rest: 60 },
+      { id: "a5e1", name: "RDL's", sets: 4, reps: "8-10", rest: 150 },
+      { id: "a5e2", name: "Bulgarian Lunges", sets: 4, reps: "10-12", rest: 90 },
       { id: "a5e4", name: "B-Stance Hip Thrust", sets: 3, reps: "10-12", rest: 90 },
+      { id: "a5e7", name: "Leg Press", sets: 4, reps: "10-12", rest: 90 },
+      { id: "a5e3", name: "Seated Leg Curl (drop set S4)", sets: 4, reps: "12", rest: 60 },
       { id: "a5e5", name: "Glute Medius Kickback", sets: 3, reps: "15", rest: 60 },
       { id: "a5e6", name: "Smith Machine Calf Raises", sets: 3, reps: "12-15", rest: 60 },
     ],
@@ -190,11 +194,12 @@ const BLOCK_B_DAYS = [
     focus: "priority",
     exercises: [
       { id: "b1e1", name: "Smith Machine Squats", sets: 4, reps: "8-12", rest: 120 },
-      { id: "b1e2", name: "Wide Stance Leg Press", sets: 4, reps: "10-12", rest: 90 },
-      { id: "b1e3", name: "Single Leg Hip Thrusts (3s negatives)", sets: 3, reps: "10-12 c/pierna", rest: 90 },
       { id: "b1e4", name: "SL Leg Press", sets: 3, reps: "10-12 c/pierna", rest: 75 },
+      { id: "b1e8", name: "SL RDL's", sets: 3, reps: "10-12 c/pierna", rest: 90 },
+      { id: "b1e3", name: "Single Leg Hip Thrusts (3s negatives)", sets: 3, reps: "10-12 c/pierna", rest: 90 },
       { id: "b1e5", name: "Leg Extension", sets: 3, reps: "12-15", rest: 60 },
-      { id: "b1e6", name: "Calf Raises", sets: 4, reps: "15-20", rest: 45 },
+      { id: "b1e7", name: "Leg Curls", sets: 3, reps: "12-15", rest: 60 },
+      { id: "b1e6", name: "Calf Raises", sets: 3, reps: "15-20", rest: 45 },
     ],
   },
   {
@@ -202,13 +207,15 @@ const BLOCK_B_DAYS = [
     num: 2,
     title: "Full Upper Body",
     focus: "maintain",
+    upperBody: true,
     exercises: [
-      { id: "b2e1", name: "Incline DB Chest Press", sets: 3, reps: "10-12", rest: 90 },
       { id: "b2e2", name: "Barbell Rows", sets: 3, reps: "10-12", rest: 90 },
-      { id: "b2e3", name: "Single Arm Shoulder Press", sets: 3, reps: "12 c/lado", rest: 75 },
-      { id: "b2e4", name: "Sit Down Rows", sets: 3, reps: "12-15", rest: 75 },
-      { id: "b2e5", name: "Bicep Curl to Shoulder Press", sets: 3, reps: "12-15", rest: 60 },
       { id: "b2e6", name: "Skull Crushers", sets: 3, reps: "12-15", rest: 60 },
+      { id: "b2e1", name: "Incline DB Chest Press", sets: 3, reps: "10-12", rest: 90 },
+      { id: "b2e3", name: "Single Arm Shoulder Press", sets: 3, reps: "12 c/lado", rest: 75 },
+      { id: "b2e5", name: "Bicep Curl to Shoulder Press", sets: 3, reps: "12-15", rest: 60 },
+      { id: "b2e7", name: "DB Rear Delt Fly", sets: 3, reps: "12-15", rest: 60 },
+      { id: "b2e4", name: "Sit Down Rows", sets: 3, reps: "12-15", rest: 75 },
     ],
   },
   {
@@ -219,11 +226,13 @@ const BLOCK_B_DAYS = [
     exercises: [
       { id: "b3e1", name: "Hip Thrust Burnout (ultima serie al fallo)", sets: 3, reps: "20-25", rest: 90 },
       { id: "b3e2", name: "Single Leg Hip Thrust", sets: 3, reps: "10-12 c/pierna", rest: 90 },
-      { id: "b3e3", name: "Donkey Kicks", sets: 3, reps: "15 c/pierna", rest: 60 },
+      { id: "b3e8", name: "Hip Abduction Machine", sets: 3, reps: "15", rest: 60 },
+      { id: "b3e9", name: "Machine Adductions", sets: 3, reps: "12-15", rest: 60 },
       { id: "b3e4", name: "V-Ups", sets: 3, reps: "15", rest: 45 },
-      { id: "b3e5", name: "Heels to the Heaven", sets: 3, reps: "15", rest: 45 },
       { id: "b3e6", name: "Dead Bugs", sets: 3, reps: "12 c/lado", rest: 45 },
+      { id: "b3e5", name: "Heels to the Heaven", sets: 3, reps: "15", rest: 45 },
       { id: "b3e7", name: "Flutter Kicks", sets: 3, reps: "20-30 seg", rest: 45 },
+      { id: "b3e3", name: "Cable Donkey Kicks", sets: 3, reps: "15 c/pierna", rest: 60 },
     ],
   },
   {
@@ -231,13 +240,14 @@ const BLOCK_B_DAYS = [
     num: 4,
     title: "Full Upper Body",
     focus: "maintain",
+    upperBody: true,
     exercises: [
       { id: "b4e1", name: "Flat/Machine Chest Press", sets: 3, reps: "10-12", rest: 90 },
-      { id: "b4e2", name: "Lat Pulldown", sets: 3, reps: "10-12", rest: 90 },
       { id: "b4e3", name: "Military Press", sets: 3, reps: "10-12", rest: 90 },
       { id: "b4e4", name: "Single Arm Row", sets: 3, reps: "12 c/lado", rest: 75 },
-      { id: "b4e5", name: "Cable Hammer Curls", sets: 3, reps: "12-15", rest: 60 },
+      { id: "b4e2", name: "Lat Pulldown", sets: 3, reps: "10-12", rest: 90 },
       { id: "b4e6", name: "Tricep Pushdown", sets: 3, reps: "12-15", rest: 60 },
+      { id: "b4e5", name: "Cable Hammer Curls", sets: 3, reps: "12-15", rest: 60 },
     ],
   },
   {
@@ -248,10 +258,11 @@ const BLOCK_B_DAYS = [
     exercises: [
       { id: "b5e1", name: "Hip Thrusts", sets: 4, reps: "10-12", rest: 120 },
       { id: "b5e2", name: "Smith Machine RDL's", sets: 4, reps: "10-12", rest: 120 },
+      { id: "b5e7", name: "Wide Stance Leg Press", sets: 4, reps: "10-12", rest: 90 },
       { id: "b5e3", name: "Smith Machine Lunges", sets: 3, reps: "10-12 c/pierna", rest: 90 },
-      { id: "b5e4", name: "SL RDL's", sets: 3, reps: "10-12 c/pierna", rest: 90 },
+      { id: "b5e8", name: "Leg Extension", sets: 3, reps: "12-15", rest: 60 },
       { id: "b5e5", name: "Leg Curls", sets: 3, reps: "12-15", rest: 60 },
-      { id: "b5e6", name: "Calf Raises", sets: 4, reps: "15-20", rest: 45 },
+      { id: "b5e6", name: "Calf Raises", sets: 3, reps: "15-20", rest: 45 },
     ],
   },
 ];
@@ -278,6 +289,50 @@ function fmtTime(s) {
   const m = Math.floor(s / 60);
   const sec = s % 60;
   return `${m}:${sec.toString().padStart(2, "0")}`;
+}
+
+function parseRepsTarget(repsStr) {
+  if (!repsStr) return null;
+  const matches = String(repsStr).match(/\d+/g);
+  if (!matches || matches.length === 0) return null;
+  return parseInt(matches[matches.length - 1], 10);
+}
+
+function parseSetReps(val) {
+  if (val === null || val === undefined || val === "") return null;
+  const m = String(val).match(/\d+/);
+  return m ? parseInt(m[0], 10) : null;
+}
+
+function parseSetWeight(val) {
+  if (val === null || val === undefined || val === "") return null;
+  const n = parseFloat(val);
+  return isNaN(n) ? null : n;
+}
+
+function sessionHitsTarget(session, target) {
+  if (!session || !session.sets || session.sets.length === 0 || target === null) return false;
+  return session.sets.every((s) => {
+    const r = parseSetReps(s.reps);
+    const w = parseSetWeight(s.weight);
+    return r !== null && r >= target && w !== null && w > 0;
+  });
+}
+
+function suggestedNextWeight(session) {
+  if (!session || !session.sets) return null;
+  const weights = session.sets.map((s) => parseSetWeight(s.weight)).filter((w) => w !== null);
+  if (weights.length === 0) return null;
+  const avg = weights.reduce((a, b) => a + b, 0) / weights.length;
+  const increased = avg * 1.0375;
+  return Math.round(increased / 2.5) * 2.5;
+}
+
+function avgWeight(session) {
+  if (!session || !session.sets) return null;
+  const weights = session.sets.map((s) => parseSetWeight(s.weight)).filter((w) => w !== null);
+  if (weights.length === 0) return null;
+  return weights.reduce((a, b) => a + b, 0) / weights.length;
 }
 
 function blankSets(count, prefillWeight, prefillReps) {
@@ -308,13 +363,22 @@ function PlateDots({ count, filled, color }) {
   );
 }
 
-function ExerciseCard({ exercise, data, onUpdateCurrent, onSaveSession, onAddSet, onRemoveSet, accent, accentDim }) {
+function ExerciseCard({ exercise, data, onUpdateCurrent, onSaveSession, onAddSet, onRemoveSet, accent, accentDim, upperBody }) {
   const [open, setOpen] = useState(false);
   const current = (data && data.current) || blankSets(exercise.sets);
   const history = (data && data.history) || [];
   const lastSession = history.length ? history[0] : null;
   const completedCount = current.filter((s) => s.completed).length;
   const allDone = completedCount === current.length;
+
+  const repsTarget = parseRepsTarget(exercise.reps);
+  const sessionsNeeded = upperBody ? 3 : 2;
+  const readyToProgress =
+    repsTarget !== null &&
+    history.length >= sessionsNeeded &&
+    history.slice(0, sessionsNeeded).every((sess) => sessionHitsTarget(sess, repsTarget));
+  const suggestedWeight = readyToProgress ? suggestedNextWeight(history[0]) : null;
+  const currentAvgWeight = readyToProgress ? avgWeight(history[0]) : null;
 
   const updateSet = (idx, field, value) => {
     const next = current.map((s, i) => (i === idx ? { ...s, [field]: value } : s));
@@ -392,6 +456,21 @@ function ExerciseCard({ exercise, data, onUpdateCurrent, onSaveSession, onAddSet
                 ultima vez: {lastSession.sets[0]?.weight || "-"}lb
               </span>
             )}
+            {readyToProgress && (
+              <span
+                style={{
+                  fontFamily: "'Work Sans', sans-serif",
+                  fontSize: 11,
+                  fontWeight: 700,
+                  color: COLORS.bg,
+                  background: COLORS.green,
+                  padding: "2px 8px",
+                  borderRadius: 999,
+                }}
+              >
+                ⬆ Sube peso
+              </span>
+            )}
           </div>
         </div>
         <span
@@ -429,6 +508,43 @@ function ExerciseCard({ exercise, data, onUpdateCurrent, onSaveSession, onAddSet
           >
             ▶ Ver tecnica en YouTube
           </a>
+
+          {readyToProgress && (
+            <div
+              style={{
+                background: "rgba(140,217,163,0.12)",
+                border: `1px solid ${COLORS.green}`,
+                borderRadius: 10,
+                padding: "10px 12px",
+                marginBottom: 14,
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: "'Work Sans', sans-serif",
+                  fontWeight: 700,
+                  fontSize: 13,
+                  color: COLORS.green,
+                  marginBottom: 3,
+                }}
+              >
+                🎯 Listo para subir peso
+              </div>
+              <div
+                style={{
+                  fontFamily: "'Work Sans', sans-serif",
+                  fontSize: 12.5,
+                  color: COLORS.text,
+                  lineHeight: 1.4,
+                }}
+              >
+                Completaste el tope de reps ({repsTarget}) en todas las series de tus ultimas{" "}
+                {sessionsNeeded} sesiones. Sube de{" "}
+                <strong>{currentAvgWeight ? currentAvgWeight.toFixed(1) : "-"} lb</strong> a{" "}
+                <strong>{suggestedWeight} lb</strong> la proxima vez.
+              </div>
+            </div>
+          )}
 
           <div
             style={{
@@ -827,6 +943,7 @@ function App() {
   const day = days[activeIdx];
   const storageKey = `logs-week${activeWeek}-${day.id}`;
   const dayStatusKey = `week${activeWeek}-${day.id}`;
+  const isDeloadWeek = effectiveWeek(activeWeek) === 4;
 
   useEffect(() => {
     (async () => {
@@ -881,7 +998,7 @@ function App() {
     }
   };
 
-  const loadDay = useCallback(async (key, exercises) => {
+  const loadDay = useCallback(async (key, exercises, deload) => {
     setLoading(true);
     let parsed = {};
     try {
@@ -892,15 +1009,20 @@ function App() {
     }
     const next = { ...parsed };
     exercises.forEach((ex) => {
-      if (!next[ex.id] || !next[ex.id].current || next[ex.id].current.length !== ex.sets) {
+      const targetSetCount = deload ? Math.max(1, Math.ceil(ex.sets / 2)) : ex.sets;
+      if (!next[ex.id] || !next[ex.id].current || next[ex.id].current.length !== targetSetCount) {
         const lastHist = next[ex.id]?.history?.[0];
+        const lastWeight = lastHist?.sets?.[0]?.weight || "";
+        let prefillWeight = lastWeight;
+        if (deload && lastWeight) {
+          const w = parseSetWeight(lastWeight);
+          if (w !== null) {
+            prefillWeight = String(Math.round((w * 0.75) / 2.5) * 2.5);
+          }
+        }
         next[ex.id] = {
           history: next[ex.id]?.history || [],
-          current: blankSets(
-            ex.sets,
-            lastHist?.sets?.[0]?.weight || "",
-            lastHist?.sets?.[0]?.reps || ""
-          ),
+          current: blankSets(targetSetCount, prefillWeight, lastHist?.sets?.[0]?.reps || ""),
         };
       }
     });
@@ -909,9 +1031,10 @@ function App() {
   }, []);
 
   useEffect(() => {
-    loadDay(storageKey, day.exercises);
+    loadDay(storageKey, day.exercises, isDeloadWeek);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [storageKey]);
+  }, [storageKey, isDeloadWeek]);
+
 
   const persist = async (key, data) => {
     try {
@@ -1162,6 +1285,42 @@ function App() {
           </h2>
         </div>
 
+        {isDeloadWeek && (
+          <div
+            style={{
+              background: "rgba(177,140,255,0.10)",
+              border: `1px solid ${COLORS.gold}`,
+              borderRadius: 12,
+              padding: "12px 14px",
+              marginBottom: 16,
+            }}
+          >
+            <div
+              style={{
+                fontFamily: "'Work Sans', sans-serif",
+                fontWeight: 700,
+                fontSize: 13,
+                color: COLORS.gold,
+                marginBottom: 4,
+              }}
+            >
+              🌙 Semana de descarga (deload)
+            </div>
+            <div
+              style={{
+                fontFamily: "'Work Sans', sans-serif",
+                fontSize: 12.5,
+                color: COLORS.text,
+                lineHeight: 1.4,
+              }}
+            >
+              Series reducidas a la mitad automaticamente y peso sugerido ~25% mas bajo que tu
+              ultima sesion. Entrena dejando 4-5 reps en reserva (no busques el fallo). El
+              objetivo esta semana es recuperar, no progresar.
+            </div>
+          </div>
+        )}
+
         {loading ? (
           <div
             style={{
@@ -1186,6 +1345,7 @@ function App() {
                 onRemoveSet={removeSet}
                 accent={day.focus === "priority" ? COLORS.gold : COLORS.teal}
                 accentDim={day.focus === "priority" ? COLORS.goldDim : COLORS.tealDim}
+                upperBody={!!day.upperBody}
               />
             ))}
           </div>
